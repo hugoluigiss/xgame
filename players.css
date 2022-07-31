@@ -70,10 +70,10 @@
     color: brown;
 }
 
-@media screen and (max-width:780px) {
+@media screen and (max-width:980px) {
     .caixaJogadores img{
-        width: 100px;
-        height: auto;
+        
+        
     }
 
     .caixaJogadores h1{

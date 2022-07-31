@@ -43,7 +43,7 @@ const loop = setInterval(() => {
     const fogoPosition = fogo.offsetLeft;
 
 
-    if (pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
+    if (pipePosition <= 120 && pipePosition > 0 && marioPosition < 70) {
         gameOverSound.play();
         pipe.style.animation = 'none'
         pipe.style.left = `${pipePosition}px`
@@ -69,7 +69,7 @@ const loop = setInterval(() => {
         novoJogo();
     }
 
-    if (monstroPosition <= 90 && monstroPosition > 0 && marioPosition < 80) {
+    if (monstroPosition <= 90 && monstroPosition > 0 && marioPosition < 70) {
         gameOverSound.play();
         pipe.style.animation = 'none'
         pipe.style.left = `${pipePosition}px`
@@ -97,7 +97,7 @@ const loop = setInterval(() => {
         novoJogo();
     }
 
-    if (fogoPosition <= 120 && fogoPosition > 0   && marioPosition < 80) {
+    if (fogoPosition <= 120 && fogoPosition > 0   && marioPosition < 70) {
         gameOverSound.play();
         pipe.style.animation = 'none'
         pipe.style.left = `${pipePosition}px`
