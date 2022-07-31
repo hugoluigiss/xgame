@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --display1:none;
+}
+
+
+.gameBoard{
+    width: 100%;
+    height: 500px;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87CEEB, #E0F6FF);
+    border-bottom: 15px solid green;
+    display:var(--display1);
+}
+
+.mostrarGame{
+    --display1:block
+}
+
+.pipe{
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: pipeAnimation 2s infinite linear;
+}
+
+.mario{
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    
+}
+
+.monstro{
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    animation: monstroAnime 4s 1 linear forwards;
+}
+
+.fogo{
+    width: 100px;
+    position: absolute;
+    bottom: 0;
+    animation: fogoAnime 9s 6 linear forwards;
+    display: none;
+}
+
+
+.nuvens{
+    position: absolute;
+    width: 550px;
+    animation: nuvensAnime 15s infinite linear;
+}
+
+.jump{
+    animation: jump 700ms ease-out;
+}
+
+@keyframes pipeAnimation{
+    from{
+        right: -80px;
+    }
+
+    to{
+        right: 100%;
+    }
+
+}
+
+@keyframes jump{
+    0%{
+        bottom: 0;
+    }
+
+    30%{
+        bottom: 180px;
+    }
+
+    40% {
+        bottom: 180px;
+    }
+    50%{
+        bottom: 180px;
+    }
+
+    60%{
+        bottom: 160px;
+    }
+
+    100%{
+        bottom: 0;
+    }
+
+}
+
+@keyframes nuvensAnime{
+    from{
+        right: -550px;
+    }
+
+    to{
+        right: 100%;
+    }
+
+}
+
+@keyframes monstroAnime{
+    from{
+        right: -80px;
+    }
+
+    to{
+        right: 120%;
+    }
+
+}
+
+@keyframes fogoAnime{
+    from{
+        right: -80px;
+    }
+
+    to{
+        right: 120%;
+    }
+
+}
+
+
+@media screen and (max-width:780px) {
+    .gameBoard{
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+
