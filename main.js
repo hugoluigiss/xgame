@@ -7,7 +7,7 @@ const monstro = document.querySelector('.monstro');
 const fogo = document.querySelector('.fogo');
 
 
-document.addEventListener('keydown', () => {
+document.addEventListener('click', () => {
     somPulo.play()
     mario.classList.add('jump')
     setTimeout(() => {
